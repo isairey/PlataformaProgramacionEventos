@@ -205,7 +205,7 @@ Módulo de generación de reportes y estadísticas.
 # 📂 Estructura del proyecto
 
 ```bash
-EventSchedulingSystem/
+PlataformaProgramacionEventos/
 │
 ├── client/                     # Aplicación cliente
 ├── server/                     # Servidor principal
@@ -238,7 +238,7 @@ EventSchedulingSystem/
 ## 1️⃣ Clonar repositorio
 
 ```bash
-git clone https://github.com/isairey/EventSchedulingSystem.git
+git clone https://github.com/isairey/PlataformaProgramacionEventos.git
 ```
 
 ---
