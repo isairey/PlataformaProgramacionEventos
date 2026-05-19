@@ -343,28 +343,6 @@ java Client.java
 
 ---
 
-# 📸 Vista previa
-
-## 🖥️ Interfaces del sistema
-
-<div align="center">
-
-### 📦 Gestión de activos
-<img src="https://cdn-icons-png.flaticon.com/512/679/679720.png" width="120">
-
-### 📅 Programación de eventos
-<img src="https://cdn-icons-png.flaticon.com/512/3652/3652191.png" width="120">
-
-### 💳 Facturación
-<img src="https://cdn-icons-png.flaticon.com/512/2489/2489756.png" width="120">
-
-### 📊 Reportes
-<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="120">
-
-</div>
-
----
-
 # 🧠 Objetivos del proyecto
 
 ## 🎯 Aprendizaje y desarrollo
@@ -421,13 +399,13 @@ git push origin feature/nueva-funcionalidad
 
 ---
 
-# 👨‍💻 Equipo de desarrollo
+# 👨‍💻 Desarrollador
 
 <div align="center">
 
-## ESS Development Team
+## Isai Reyes — Full Stack Developer
 
-Proyecto académico enfocado en programación Java, arquitectura cliente-servidor y sistemas empresariales 🚀
+Desarrollador apasionado por arquitecturas modernas, FastAPI y sistemas en tiempo real 🚀
 
 </div>
 
