@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<TableView xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1"
+           fx:controller="org.ess.module.user.controller.UserTableController" fx:id="fxUserTableLayout" fixedCellSize="0.0"
+           nodeOrientation="LEFT_TO_RIGHT" HBox.hgrow="ALWAYS"/>

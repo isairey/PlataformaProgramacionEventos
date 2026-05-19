@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="fxRoot" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="30.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ess.module.bookings.controller.BookingDeleteConfirmationController">
+    <children>
+        <ImageView fx:id="fxImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@icons/delete.png" />
+            </image>
+        </ImageView>
+        <VBox alignment="CENTER" spacing="20.0">
+            <children>
+                <Text fx:id="fxTextTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="You're about to delete an booking">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Text>
+                <Text fx:id="fxTextDescription" strokeType="OUTSIDE" strokeWidth="0.0" text="Please confirm if you would like to proceed with deleting this item. This action is irreversible." textAlignment="CENTER" wrappingWidth="384.68310546875">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+            </children>
+        </VBox>
+        <HBox alignment="CENTER" layoutX="10.0" layoutY="210.0" spacing="16.0">
+            <children>
+                <Button fx:id="fxButtonCancel" mnemonicParsing="false" onMouseClicked="#onClickCancelDeleteBooking" text="Cancel" />
+                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onClickDeleteBooking" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+    </padding>
+</VBox>

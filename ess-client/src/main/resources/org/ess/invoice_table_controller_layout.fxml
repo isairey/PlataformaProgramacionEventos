@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="fxRoot" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ess.module.invoice.controller.InvoiceController">
+    <children>
+        <HBox alignment="CENTER_LEFT" spacing="10.0" style="-fx-padding: 10;">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Invoice">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Text>
+            </children>
+        </HBox>
+        <HBox>
+            <children>
+                <VBox>
+                    <children>
+                  <GridPane maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="76.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.0" minWidth="10.0" prefWidth="124.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                              <Text fx:id="fxInvoiceEventName" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="93.26318359375" GridPane.columnIndex="1" />
+                        <Text layoutX="110.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event Name">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="fxStartDate" layoutX="10.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Text layoutX="86.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="fxEndDate" layoutX="10.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+                    </children>
+                </VBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="10.0" style="-fx-padding: 10;">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Items">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Text>
+            </children>
+        </HBox>
+        <VBox VBox.vgrow="ALWAYS">
+            <children>
+                <TableView fx:id="fxInvoiceTable" fixedCellSize="0.0" nodeOrientation="LEFT_TO_RIGHT" VBox.vgrow="ALWAYS" />
+            </children>
+        </VBox>
+        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="10.0" style="-fx-padding: 10;">
+            <children>
+                <HBox HBox.hgrow="ALWAYS">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Total">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </HBox>
+                <Text fx:id="fxInvoiceTotal" layoutX="20.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Text>
+            </children>
+        </HBox>
+    </children>
+</VBox>
